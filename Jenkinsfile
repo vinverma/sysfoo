@@ -16,6 +16,7 @@ pipeline {
     stage('archive') {
       steps {
         sh 'mvn package -DskipTests'
+        archiveArtifacts '**/target/*.war'
       }
     }
 
