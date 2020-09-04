@@ -3,7 +3,7 @@ pipeline{
 agent any
 
 tools {
-maven MVN-Plugin
+maven 'MVN-Plugin'
 }
 
 stages {
